@@ -1,0 +1,3 @@
+[submodule "anwar.app"]
+	path = anwar.app
+	url = git@github.com:mh-anwar/anwar.app.git

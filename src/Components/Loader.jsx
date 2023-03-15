@@ -7,9 +7,8 @@ export default function Loader() {
         fontSize="9xl"
         sx={{
           margin: 'auto',
-          font: 'Raleway, sans-serif',
+          fontFamily: 'Courier New, Courier, monospace',
           fontWeight: 300,
-          width: '100vw',
           display: 'flex',
           height: '100vh',
           alignSelf: 'center',
@@ -17,7 +16,7 @@ export default function Loader() {
           alignContent: 'center',
           alignItems: 'center',
           zIndex: 9999,
-          animation: 'fade 5s forwards',
+          animation: 'fade 2s forwards',
 
           '@keyframes fade': {
             '0%': {

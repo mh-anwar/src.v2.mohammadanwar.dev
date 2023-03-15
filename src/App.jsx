@@ -1,20 +1,29 @@
 import { useState } from 'react';
 import './App.css';
-import About from './Components/About';
+import MainPage from './Components/Main';
 import Header from './Components/Header';
 import Loader from './Components/Loader';
+import { keyframes } from '@emotion/react';
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
-  }, '5000');
+  }, '2000');
 
   return (
     <>
-      {loading && <Loader />}
+      {isLoading && <Loader />}
       <Header />
-      <About />
+      <MainPage />
     </>
   );
 }

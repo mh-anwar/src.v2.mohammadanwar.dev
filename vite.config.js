@@ -10,6 +10,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: './build',
+    outDir: './anwar.app',
   },
 });
