@@ -1,10 +1,11 @@
 import { Box, Heading, IconButton, Link } from '@chakra-ui/react';
 import { UilGithub, UilLinkedin, UilEnvelope } from '@iconscout/react-unicons';
-export default function Header() {
+export default function Header(props) {
+  const isMobile = props.isMobile;
   return (
     <Box
       sx={{
-        width: '100%',
+        width: '100vw',
         height: '10vh',
         color: 'cyan.500',
         boxShadow: '0px 5px 20px 10px #000000',
@@ -12,9 +13,11 @@ export default function Header() {
         paddingLeft: '5em',
         paddingRight: '5em',
         display: 'flex',
-        flexFlow: 'row wrap',
+        flexFlow: isMobile ? 'column wrap' : 'row wrap',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        alignContent: 'center',
+        justifyContent: isMobile ? 'center' : 'space-between',
+        gap: '1em',
         animation: 'fade-in 2s ease-in-out forwards',
         animationDelay: '2s',
         opacity: 0,
@@ -29,7 +32,11 @@ export default function Header() {
         },
       }}
     >
-      <Heading sx={{ userSelect: 'none' }} as="h1" size="lg">
+      <Heading
+        sx={{ userSelect: 'none', maxHeight: 'fit-content' }}
+        as="h1"
+        size="lg"
+      >
         Anwar
       </Heading>
       <Box

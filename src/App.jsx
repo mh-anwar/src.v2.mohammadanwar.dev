@@ -4,6 +4,7 @@ import MainPage from './Components/Main';
 import Header from './Components/Header';
 import Loader from './Components/Loader';
 import { keyframes } from '@emotion/react';
+import { useMediaQuery } from '@chakra-ui/react';
 
 const fadeIn = keyframes`
   from {
@@ -14,6 +15,7 @@ const fadeIn = keyframes`
   }
 `;
 function App() {
+  const [isMobile] = useMediaQuery('(max-width: 800px)');
   const [isLoading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
@@ -22,8 +24,8 @@ function App() {
   return (
     <>
       {isLoading && <Loader />}
-      <Header />
-      <MainPage />
+      <Header isMobile={isMobile} />
+      <MainPage isMobile={isMobile} />
     </>
   );
 }

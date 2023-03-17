@@ -1,11 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-  ChakraProvider,
-  ColorModeScript,
-  extendTheme,
-  withDefaultColorScheme,
-} from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react';
 import App from './App';
 
 const theme = extendTheme({
@@ -20,8 +15,7 @@ const theme = extendTheme({
   styles: {
     global: () => ({
       body: {
-        bg: 'linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%))',
-        height: '100vh',
+        bg: 'linear-gradient(to left bottom, hsl(230, 40%, 12%), hsl(230, 20%, 7%))',
         color: 'hsl(230, 100%, 95%)',
       },
     }),
