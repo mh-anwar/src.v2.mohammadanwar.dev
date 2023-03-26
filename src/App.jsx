@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import MainPage from './Components/Main';
 import Header from './Components/Header';
 import Loader from './Components/Loader';

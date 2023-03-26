@@ -1,8 +1,0 @@
-@font-face {
-    font-family: CascadiaCode;
-    src: url(./assets/CascadiaCode.woff2);
-}
-
-html {
-    font-family: 'CascadiaCode', sans-serif !important;
-}
