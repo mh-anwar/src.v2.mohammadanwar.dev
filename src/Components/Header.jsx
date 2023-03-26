@@ -5,7 +5,6 @@ export default function Header(props) {
   return (
     <Box
       sx={{
-        width: '100vw',
         height: '10vh',
         color: 'cyan.500',
         boxShadow: '0px 5px 20px 10px #000000',

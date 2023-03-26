@@ -16,8 +16,8 @@ export default function Loader() {
         alignItems: 'center',
         zIndex: 9999,
         animation: 'fade 2s forwards',
-        overflowX: 'hidden',
-        overflowY: 'hidden',
+        overflowX: 'none',
+        overflowY: 'none',
         '@keyframes fade': {
           '0%': {
             opacity: 0,

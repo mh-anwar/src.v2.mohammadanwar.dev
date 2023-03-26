@@ -23,9 +23,14 @@ function App() {
 
   return (
     <>
-      {isLoading && <Loader />}
-      <Header isMobile={isMobile} />
-      <MainPage isMobile={isMobile} />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <Header isMobile={isMobile} />
+          <MainPage isMobile={isMobile} />
+        </>
+      )}
     </>
   );
 }

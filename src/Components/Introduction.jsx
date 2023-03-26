@@ -4,22 +4,27 @@ import MyPicture from '../assets/mohammad.jpg';
 import Frame from '../assets/frame.svg';
 export default function Introduction(props) {
   const isMobile = props.isMobile;
-  const [index, setIndex] = useState(0);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
   let skills = [
-    'I am a Web Extension Developer',
-    'I am a Node + Express Developer',
-    'I use React.js and Chakra UI',
-    'I am a Fullstack Developer',
-    'I am a Frontend Developer',
-    'I am a Backend Developer',
+    'Web Extension Developer',
+    'HTML5, CSS, JavaScript',
+    'Fullstack Developer',
+    'Frontend Developer',
+    'React.js and Chakra UI',
+    'Backend Developer',
+    'Node.js with Express.js',
   ];
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((index + 1) % skills.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [index]);
+    const intervalId = setInterval(() => {
+      setCurrentTextIndex((currentTextIndex + 1) % skills.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentTextIndex, skills]);
 
   return (
     <Box sx={props.sx}>
@@ -28,30 +33,45 @@ export default function Introduction(props) {
         <Text fontSize="clamp(2rem, 5vw, 4rem)">
           <b>Mohammad Anwar</b>
         </Text>
-        <Input
-          fontSize="clamp(1.5rem, 2.5vw, 2.5rem)"
+        <Box
           sx={{
-            border: 'none',
-            borderRight: '1px',
-            borderRadius: 0,
-            padding: 0,
-            animation:
-              'typing 2s steps(22), blink .5s step-end infinite alternate',
-            whiteSpace: 'nowrap',
-            overflow: 'hidden',
-            '@keyframes typing': {
-              from: {
-                width: 0,
-              },
+            background: 'linear-gradient(to bottom, #F05F40, #bd7706)',
+            borderRadius: '0.3em',
+            padding: '0.5em',
+            width: '90%',
+            display: 'flex',
+            '.text': {
+              display: 'none',
             },
-            '@keyframes blink': {
-              '50%': {
-                borderRightColor: 'transparent',
+
+            '.text.active': {
+              display: 'block',
+              background: 'none',
+              backgroundColor: 'none',
+              backgroundImage: 'linear-gradient(to right, black, #750b04, red)',
+              backgroundSize: '200% auto',
+              backgroundClip: 'text',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              animation: 'textclip 5s linear infinite',
+              '@keyframes textclip': {
+                to: {
+                  backgroundPosition: '200% center',
+                },
               },
             },
           }}
-          value={skills[index]}
-        />
+        >
+          {skills.map((text, index) => (
+            <Text
+              fontSize="clamp(1rem, 2vw, 1.5rem)"
+              key={index}
+              className={`text ${index === currentTextIndex ? 'active' : ''}`}
+            >
+              {text}
+            </Text>
+          ))}
+        </Box>
       </div>
 
       <Box
@@ -70,7 +90,7 @@ export default function Introduction(props) {
               'drop-shadow(9px 9px 0 #1D3557) hue-rotate(20deg) drop-shadow(5px 5px 0 #1D3557)',
           },
         }}
-      ></Box>
+      />
     </Box>
   );
 }

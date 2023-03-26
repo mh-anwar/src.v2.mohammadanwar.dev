@@ -35,17 +35,12 @@ export default function Main(props) {
   return (
     <Box
       sx={{
-        width: '100%',
         color: 'cyan.300',
-        paddingLeft: isTablet ? '1em' : '15rem',
-        paddingRight: isTablet ? '1em' : '15rem',
         display: 'flex',
         flexFlow: 'row wrap',
         alignItems: 'right',
         animation: 'fade-in 2s ease-in-out forwards',
-        animationDelay: '2s',
         opacity: 0,
-
         '@keyframes fade-in': {
           from: {
             opacity: 0,

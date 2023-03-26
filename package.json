@@ -1,5 +1,11 @@
 {
-  "name": "portfolio",
+  "name": "anwar",
+  "description": "My personal developer portfolio.",
+  "author": {
+    "name": "Mohammad Anwar",
+    "email": "mohammad@anwar.app"
+  },
+  "homepage": "https://anwar.app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +22,10 @@
     "framer-motion": "^10.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mh-anwar/anwar.git"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

@@ -1,6 +1,6 @@
 import { Box, Image, Text, useMediaQuery } from '@chakra-ui/react';
 import Hacker from '../assets/hacker.jpg';
-import RealHacker from '../assets/realHacker.jpg';
+import RealHacker from '../assets/realHacker.png';
 
 export default function About({ sx }) {
   const [isMobile] = useMediaQuery('(max-width: 700px)');
@@ -73,7 +73,7 @@ export default function About({ sx }) {
             src={RealHacker}
             flex="10"
           />
-          <Text>What I Ended Up Doing</Text>
+          <Text>What Programming Really Is</Text>
         </div>
       </Box>
     </Box>

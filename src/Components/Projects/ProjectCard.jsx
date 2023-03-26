@@ -19,6 +19,8 @@ export default function ProjectCard({
   techUsed,
   description,
   num,
+  githubLink = null,
+  liveDemoLink = null,
 }) {
   const [isMobile] = useMediaQuery('(max-width: 900px)');
 
@@ -64,13 +66,15 @@ export default function ProjectCard({
             gap: '1em',
           }}
         >
-          <Button
-            colorScheme="blue"
-            mr={4}
-            onClick={() => window.open(githubLink, '_blank')}
-          >
-            View Source Code
-          </Button>
+          {githubLink !== null && (
+            <Button
+              colorScheme="blue"
+              mr={4}
+              onClick={() => window.open(githubLink, '_blank')}
+            >
+              View Source Code
+            </Button>
+          )}
           <Button
             colorScheme="green"
             onClick={() => window.open(liveDemoLink, '_blank')}
