@@ -13,6 +13,7 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `;
+
 function App() {
   const [isMobile] = useMediaQuery('(max-width: 800px)');
   const [isLoading, setLoading] = useState(true);

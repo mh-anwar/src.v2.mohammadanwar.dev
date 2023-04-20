@@ -5,6 +5,7 @@ export default function Loader() {
     <Text
       fontSize="9xl"
       sx={{
+        userSelect: 'none',
         margin: 'auto',
         fontFamily: 'Courier New, Courier, monospace',
         fontWeight: 300,

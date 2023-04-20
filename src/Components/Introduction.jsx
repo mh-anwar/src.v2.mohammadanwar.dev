@@ -28,7 +28,7 @@ export default function Introduction(props) {
 
   return (
     <Box sx={props.sx}>
-      <div>
+      <Box sx={{ userSelect: 'none' }}>
         <Text fontSize="clamp(1rem, 2vw, 1.5rem)">Hey, I'm</Text>
         <Text fontSize="clamp(2rem, 5vw, 4rem)">
           <b>Mohammad Anwar</b>
@@ -48,14 +48,14 @@ export default function Introduction(props) {
               display: 'block',
               background: 'none',
               backgroundColor: 'none',
-              backgroundImage: 'linear-gradient(to right, black, #750b04, red)',
+              backgroundImage: 'linear-gradient(to right, #F05F40, black)',
               backgroundSize: '200% auto',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               animation: 'textclip 5s linear infinite',
               '@keyframes textclip': {
-                to: {
+                from: {
                   backgroundPosition: '200% center',
                 },
               },
@@ -72,7 +72,7 @@ export default function Introduction(props) {
             </Text>
           ))}
         </Box>
-      </div>
+      </Box>
 
       <Box
         borderRadius="lg"
@@ -83,11 +83,12 @@ export default function Introduction(props) {
           backgroundImage: `url(${MyPicture}), url(${MyPicture})`,
           backgroundSize: 'cover',
           backgroundPosition: '0px 0px, 1px 1px',
-          transition: 'filter 0.4s ease-in-out, transform .3s ease-in-out',
+          filter:
+            'grayscale(15%) contrast(110%) brightness(90%) drop-shadow(0px 0px 20px #1D3557)',
+          transition: 'filter 1s ease-in-out, transform .3s ease-in-out',
           '&:hover': {
-            transform: 'scale(1.1)',
-            filter:
-              'drop-shadow(9px 9px 0 #1D3557) hue-rotate(20deg) drop-shadow(5px 5px 0 #1D3557)',
+            transform: 'scale(1.2)',
+            filter: 'brightness(80%) drop-shadow(0px 0px 50px #1D3557)',
           },
         }}
       />
