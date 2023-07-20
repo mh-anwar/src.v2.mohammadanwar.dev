@@ -1,0 +1,56 @@
+/*
+	SwiperJS is the WORST possible library on this planet. (maybe worse than log4j)
+*/
+.projects-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects-display {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin: 0;
+}
+
+.project-swiper {
+	max-height: 100vh;
+	min-height: 0;
+	width: 80vw;
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	align-content: center;
+}
+
+.project-swiper-slide {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 0;
+}
+
+.swiper-prev,
+.swiper-next {
+	color: #2088ff;
+	max-width: 40px;
+	margin: 0;
+	cursor: pointer;
+	align-self: center;
+}
+.swiper-prev {
+	margin-left: 1em;
+	margin-right: 0;
+	padding-right: 0;
+}
+.swiper-next {
+	margin-right: 1em;
+	margin-left: 0;
+	padding-right: 0;
+}

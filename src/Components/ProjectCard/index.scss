@@ -1,0 +1,86 @@
+.projekt {
+	padding: 0.5em;
+	max-width: 80vw;
+	max-height: 90vh;
+	align-self: center;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #84afe6;
+	border-radius: 1em;
+}
+
+@media screen and (max-width: 750px) {
+	.projekt {
+		min-width: fit-contents;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.projekt-image {
+	margin: 1em;
+	width: 100%;
+	max-width: 300px;
+	height: 100%;
+	border-radius: 0.75em;
+	align-self: center;
+}
+
+.project-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1em;
+	padding: 2em;
+	flex: 2;
+}
+
+.project-links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1em;
+	a {
+		display: flex;
+		flex: 1;
+		background-color: #2088ff;
+		justify-content: center;
+		align-content: center;
+		cursor: pointer;
+		text-decoration: none;
+		padding: 0.5em;
+		padding-left: 1em;
+		padding-right: 1em;
+		border-radius: 0.5em;
+		svg,
+		img {
+			width: 30px;
+			height: 30px;
+		}
+		font-size: 30px;
+	}
+}
+
+.project-tech {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.5em;
+
+	span {
+		background-color: #7aa6df;
+		padding: 0.5em;
+		border-radius: 0.5em;
+		align-self: stretch;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
