@@ -18,7 +18,7 @@
 	height: 550px;
 	border-radius: 1em;
 	box-shadow: 0 12px 14px rgba(0, 0, 0, 0.3);
-	filter: drop-shadow(rgb(255, 255, 255) 0px 0px 50px);
+	filter: drop-shadow(#caf0f8 0px 0px 50px);
 }
 
 /* shouldnt be wider than 50% of page when page is on desktop*/
@@ -27,7 +27,7 @@
 	display: flex;
 	flex-direction: column;
 	border-radius: 1em;
-	background-color: #f4eff8;
+	background-color: #caf0f8;
 	text-align: center;
 	justify-content: center;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);

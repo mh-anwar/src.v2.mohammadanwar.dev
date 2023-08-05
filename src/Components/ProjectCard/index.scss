@@ -9,7 +9,8 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #84afe6;
+	background-color: #0077b6;
+	color: #caf0f8;
 	border-radius: 1em;
 }
 
@@ -49,7 +50,7 @@
 	a {
 		display: flex;
 		flex: 1;
-		background-color: #2088ff;
+		background-color: #002b5f;
 		justify-content: center;
 		align-content: center;
 		cursor: pointer;
@@ -62,6 +63,7 @@
 		img {
 			width: 30px;
 			height: 30px;
+			filter: invert(100%);
 		}
 		font-size: 30px;
 	}
@@ -74,7 +76,7 @@
 	gap: 0.5em;
 
 	span {
-		background-color: #7aa6df;
+		background-color: #015e90;
 		padding: 0.5em;
 		border-radius: 0.5em;
 		align-self: stretch;
