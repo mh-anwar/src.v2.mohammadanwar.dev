@@ -12,7 +12,7 @@ export default function Header() {
 			<div className='sections'>
 				{[
 					['About', '#about'],
-					['Tech Stack', '#tech-stack'],
+					['Tech', '#tech-stack'],
 					['Projects', '#projects'],
 					['Contact', '#contact'],
 				].map(([title, url]) => (
