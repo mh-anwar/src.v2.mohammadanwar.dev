@@ -1,51 +1,20 @@
 .introduction {
 	min-height: 80vh;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	flex-direction: column;
 	height: max-content;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	gap: 4em;
 }
 
-.grid-container {
-	grid-column-start: 1;
-	grid-column-end: span 2;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	position: relative;
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(10, 1fr);
-	justify-content: center;
-	align-items: center;
-	width: 100% !important;
-	margin: 0;
-	height: 80vh !important;
-	overflow: hidden;
-	div {
-		width: 10vw;
-		height: 10vh;
-		background-color: #c4e7ff;
-		border-right: 0.1px solid #300a6e;
-		border-bottom: 0.1px solid rgb(255, 0, 225);
-		border-left: none;
-		border-top: none;
-	}
-}
-
 .text {
-	grid-column-start: 1;
-	grid-row-start: 1;
-	place-self: bottom;
-	padding: 0.5em;
+	padding: 1em;
 
 	display: flex;
 	flex-direction: column;
-	align-content: flex-end;
-	justify-content: end;
-	margin-bottom: 20%;
-	margin-left: 40%;
+	align-content: center;
+	justify-content: center;
 
 	h1 {
 		font-size: 3rem;

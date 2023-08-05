@@ -16,7 +16,7 @@ export default function Loader() {
 			targets: desktopRef.current,
 			strokeDashoffset: [anime.setDashoffset, 0],
 			easing: 'easeInOutSine',
-			duration: 3000,
+			duration: 2000,
 			delay: 1500,
 			direction: 'alternate',
 			loop: true,

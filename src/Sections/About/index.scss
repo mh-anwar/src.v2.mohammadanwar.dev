@@ -15,6 +15,7 @@
 
 .my-image {
 	width: 400px;
+	height: 550px;
 	border-radius: 1em;
 	box-shadow: 0 12px 14px rgba(0, 0, 0, 0.3);
 	filter: drop-shadow(rgb(255, 255, 255) 0px 0px 50px);
@@ -38,5 +39,9 @@
 @media screen and (max-width: 800px) {
 	.card {
 		max-width: 100%;
+	}
+	.my-image {
+		width: 350px;
+		height: 500px;
 	}
 }
