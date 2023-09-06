@@ -54,3 +54,8 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 }
+@media screen and (max-width: 400px) {
+	.all-tech {
+		grid-template-columns: 1fr 1fr;
+	}
+}

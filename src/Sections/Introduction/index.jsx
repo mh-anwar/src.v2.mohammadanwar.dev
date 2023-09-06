@@ -9,8 +9,16 @@ export default function Introduction() {
 					Mohammad Anwar
 				</h1>
 				<p>
-					A Grade 12 student captivated by the marvels of the web and
-					the boundless world of Artificial Intelligence.
+					A Grade 12 student captivated by the marvels of the web,
+					working to educate and inspire others at{' '}
+					<a
+						href='https://csya-edu.org'
+						target='_blank'
+						rel='noreferrer'
+					>
+						Computer Science Youth of America
+					</a>
+					.
 				</p>
 			</div>
 		</section>

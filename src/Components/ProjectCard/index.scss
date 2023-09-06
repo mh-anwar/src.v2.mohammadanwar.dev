@@ -19,6 +19,11 @@
 		min-width: fit-contents;
 		align-items: center;
 		justify-content: center;
+		padding: 0.25em;
+	}
+	.project-tech {
+		align-content: center;
+		justify-content: center;
 	}
 }
 
@@ -74,7 +79,6 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	gap: 0.5em;
-
 	span {
 		background-color: #015e90;
 		padding: 0.5em;
@@ -83,5 +87,9 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+	}
+	.winner {
+		background-color: rgb(0, 255, 238);
+		color: black;
 	}
 }

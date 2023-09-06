@@ -3,6 +3,7 @@
 	flex-direction: column;
 	min-height: 80vh;
 	justify-content: center;
+	overflow-x: none;
 }
 .about {
 	display: flex;
@@ -43,5 +44,12 @@
 	.my-image {
 		width: 350px;
 		height: 500px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.my-image {
+		width: 200px;
+		height: 280px;
 	}
 }

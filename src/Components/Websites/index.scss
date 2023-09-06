@@ -1,9 +1,37 @@
+.website-select {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 0.5em;
+	padding: 0.25em;
+}
 .websites {
-	color: black;
-
+	color: white;
+	background: inherit;
 	font-size: 22px;
-	padding: 1em;
-	border: 1px solid transparent;
+	border: none;
 	border-radius: 0.5em;
 	outline: none;
+	width: fit-content;
+	max-width: fit-content;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	appearance: none;
+	padding: 0.5em;
+}
+
+.open-in-new {
+	width: 2rem;
+	cursor: pointer;
+}
+.really-small-text {
+	font-size: 0.5rem;
+	padding: none;
+	margin: none;
+	color: white;
+	text-align: center;
 }

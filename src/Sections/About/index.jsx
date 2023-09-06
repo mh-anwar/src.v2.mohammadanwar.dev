@@ -38,8 +38,16 @@ export default function About() {
 					<p>
 						{' '}
 						Currently, I&apos;m developing an application with
-						Langchain and LLaMA, as well as several browser
-						extensions!{' '}
+						experimenting with LLaMA 2, as well as building a
+						scalable version of{' '}
+						<a
+							href='https://chess.anwar.app'
+							target='_blank'
+							rel='noreferrer'
+						>
+							Wilson&apos;s Chess CMS
+						</a>
+						!{' '}
 					</p>
 				</div>
 			</div>
